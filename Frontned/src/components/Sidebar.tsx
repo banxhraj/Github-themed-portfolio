@@ -45,7 +45,7 @@ export default function Sidebar() {
           </div>
           <div className="flex items-center text-[#6e7781] dark:text-[#8b949e]">
             <Mail className="w-4 h-4 mr-2" />
-            <a className="text-[#0969da] hover:underline" href="mailto:hello@example.com">hello@example.com</a>
+            <a className="text-[#0969da] hover:underline" href="mailto:hello@example.com">Banshrajthapa@gmail.com</a>
           </div>
         </div>
       </div>
