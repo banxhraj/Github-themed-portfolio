@@ -14,7 +14,7 @@ export default function FileExplorer({ onViewChange }: FileExplorerProps) {
           <img
             alt="Banshraj Thapa"
             className="w-6 h-6 rounded-full"
-            src="image/profile.jpg"
+            src="public/image/profile.jpg"
             referrerPolicy="no-referrer"
           />
           <span className="text-sm font-bold">banshraj-thapa</span>
