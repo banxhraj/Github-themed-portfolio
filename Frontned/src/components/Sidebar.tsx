@@ -9,7 +9,7 @@ export default function Sidebar() {
           <img
             alt="Banshraj Thapa Profile"
             className="w-full rounded-full border border-[#d0d7de] dark:border-[#30363d]"
-            src="/image/profile.jpg"
+            src="profile.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute bottom-4 left-4 flex items-center bg-white dark:bg-[#0d1117] border border-[#d0d7de] dark:border-[#30363d] rounded-full px-2 py-1 shadow-sm text-xs">
