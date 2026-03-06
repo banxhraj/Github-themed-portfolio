@@ -3,26 +3,26 @@ import { Github, Bell, Star, GitFork, Code, CircleDot, GitMerge, PlayCircle, Lib
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#f6f8fa] dark:bg-[#161b22] border-b border-[#d0d7de] dark:border-[#30363d] pt-4 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Github className="w-8 h-8 text-slate-900 dark:text-white" />
-          <div className="flex items-center text-lg md:text-xl font-medium">
-            <a className="text-[#0969da] hover:underline" href="#">banshraj-thapa</a>
+    <nav className="bg-[#f6f8fa] dark:bg-[#161b22] border-b border-[#d0d7de] dark:border-[#30363d] pt-4 px-4 md:px-8 overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <Github className="w-8 h-8 flex-shrink-0 text-slate-900 dark:text-white" />
+          <div className="flex flex-wrap items-center text-base md:text-xl font-medium">
+            <a className="text-[#0969da] hover:underline whitespace-nowrap" href="#">banshraj-thapa</a>
             <span className="mx-1 text-[#6e7781] dark:text-[#8b949e]">/</span>
-            <a className="text-[#0969da] hover:underline font-bold" href="#">portfolio</a>
-            <span className="ml-2 px-2 py-0.5 text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full text-[#6e7781] dark:text-[#8b949e] font-normal">Public</span>
+            <a className="text-[#0969da] hover:underline font-bold whitespace-nowrap" href="#">portfolio</a>
+            <span className="ml-2 px-2 py-0.5 text-[10px] md:text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full text-[#6e7781] dark:text-[#8b949e] font-normal">Public</span>
           </div>
         </div>
-        <div className="hidden md:flex items-center space-x-2">
-          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold">
-            <Bell className="w-4 h-4 mr-1.5" /> Notifications
+        <div className="flex items-center space-x-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-[10px] md:text-xs font-semibold whitespace-nowrap">
+            <Bell className="w-3.5 h-3.5 md:w-4 md:h-4 mr-1.5" /> Notifications
           </button>
-          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold">
-            <Star className="w-4 h-4 mr-1.5" /> Star <span className="ml-2 px-2 bg-slate-200 dark:bg-slate-700 rounded-full">124</span>
+          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-[10px] md:text-xs font-semibold whitespace-nowrap">
+            <Star className="w-3.5 h-3.5 md:w-4 md:h-4 mr-1.5" /> Star <span className="ml-2 px-1.5 md:px-2 bg-slate-200 dark:bg-slate-700 rounded-full">124</span>
           </button>
-          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold">
-            <GitFork className="w-4 h-4 mr-1.5" /> Fork <span className="ml-2 px-2 bg-slate-200 dark:bg-slate-700 rounded-full">42</span>
+          <button className="flex items-center px-3 py-1.5 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-[10px] md:text-xs font-semibold whitespace-nowrap">
+            <GitFork className="w-3.5 h-3.5 md:w-4 md:h-4 mr-1.5" /> Fork <span className="ml-2 px-1.5 md:px-2 bg-slate-200 dark:bg-slate-700 rounded-full">42</span>
           </button>
         </div>
       </div>

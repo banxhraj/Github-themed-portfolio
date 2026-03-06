@@ -31,21 +31,21 @@ export default function SkillsJsonView() {
 
   return (
     <div className="mt-8">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2 text-sm">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4 sm:gap-0">
+        <div className="flex flex-wrap items-center gap-2 text-xs md:text-sm overflow-hidden">
           <span className="text-[#0969da] hover:underline cursor-pointer">portfolio</span>
           <span className="text-[#6e7781]">/</span>
-          <span className="font-bold">skills.json</span>
-          <span className="ml-2 px-2 py-0.5 text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full text-[#6e7781] dark:text-[#8b949e]">Public</span>
+          <span className="font-bold truncate">skills.json</span>
+          <span className="px-2 py-0.5 text-[10px] md:text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full text-[#6e7781] dark:text-[#8b949e]">Public</span>
         </div>
-        <div className="flex items-center gap-2">
-          <button className="flex items-center px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-xs font-semibold">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar whitespace-nowrap">
+          <button className="px-2 md:px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-xs font-semibold">
             Watch
           </button>
-          <button className="flex items-center px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-xs font-semibold">
+          <button className="flex items-center px-2 md:px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-xs font-semibold">
             <Star className="w-3 h-3 mr-1" /> Star <span className="ml-1">124</span>
           </button>
-          <button className="flex items-center px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-xs font-semibold">
+          <button className="flex items-center px-2 md:px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-xs font-semibold">
             <GitFork className="w-3 h-3 mr-1" /> Fork
           </button>
         </div>
