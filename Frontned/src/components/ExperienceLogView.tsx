@@ -48,17 +48,17 @@ export default function ExperienceLogView() {
 
   return (
     <div className="mt-8">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2 text-sm">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4 sm:gap-0">
+        <div className="flex items-center gap-2 text-xs md:text-sm">
           <span className="text-[#0969da] hover:underline cursor-pointer">portfolio</span>
           <span className="text-[#6e7781]">/</span>
-          <span className="font-bold">experience.log</span>
+          <span className="font-bold truncate">experience.log</span>
         </div>
-        <div className="flex items-center gap-2">
-          <button className="flex items-center px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-xs font-semibold">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar whitespace-nowrap">
+          <button className="flex items-center px-2 md:px-3 py-1 bg-slate-100 dark:bg-slate-800 border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-xs font-semibold flex-shrink-0">
             <History className="w-3 h-3 mr-1" /> 8 commits
           </button>
-          <button className="flex items-center px-3 py-1 bg-[#0969da] text-white rounded text-xs font-semibold">
+          <button className="flex items-center px-2 md:px-3 py-1 bg-[#0969da] text-white rounded text-[10px] md:text-xs font-semibold flex-shrink-0">
             <Download className="w-3 h-3 mr-1" /> Clone
           </button>
         </div>

@@ -5,20 +5,22 @@ export default function Sidebar() {
   return (
     <aside className="w-full md:w-1/4">
       <div className="sticky top-8">
-        <div className="relative group">
-          <img
-            alt="Banshraj Thapa Profile"
-            className="w-full rounded-full border border-[#d0d7de] dark:border-[#30363d]"
-            src="profile.jpg"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute bottom-4 left-4 flex items-center bg-white dark:bg-[#0d1117] border border-[#d0d7de] dark:border-[#30363d] rounded-full px-2 py-1 shadow-sm text-xs">
-            <Smile className="w-3 h-3 text-yellow-500 mr-1" /> Focused
+        <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0">
+          <div className="relative group w-24 md:w-full flex-shrink-0">
+            <img
+              alt="Banshraj Thapa Profile"
+              className="w-full rounded-full border border-[#d0d7de] dark:border-[#30363d]"
+              src="profile.jpg"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute bottom-1 md:bottom-4 right-1 md:left-4 flex items-center bg-white dark:bg-[#0d1117] border border-[#d0d7de] dark:border-[#30363d] rounded-full px-1.5 md:px-2 py-0.5 md:py-1 shadow-sm text-[10px] md:text-xs">
+              <Smile className="w-2.5 h-2.5 md:w-3 md:h-3 text-yellow-500 mr-1" /> Focused
+            </div>
           </div>
-        </div>
-        <div className="mt-4">
-          <h1 className="text-2xl font-bold">Banshraj Thapa</h1>
-          <p className="text-xl text-[#6e7781] dark:text-[#8b949e] font-light">banshraj-thapa</p>
+          <div className="mt-0 md:mt-4 flex-grow">
+            <h1 className="text-xl md:text-2xl font-bold">Banshraj Thapa</h1>
+            <p className="text-lg md:text-xl text-[#6e7781] dark:text-[#8b949e] font-light">banshraj-thapa</p>
+          </div>
         </div>
         <div className="mt-4 text-sm">
           <p className="font-medium">Full Stack Developer | Tech Enthusiast</p>

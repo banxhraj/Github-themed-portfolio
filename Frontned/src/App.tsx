@@ -43,15 +43,15 @@ export default function App() {
         
         <div className="w-full md:w-3/4">
           {/* Breadcrumbs and Actions */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-4">
-            <div className="flex items-center space-x-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
+            <div className="flex items-center space-x-2 overflow-hidden">
               <button 
                 onClick={() => setCurrentView('readme')}
-                className="flex items-center px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800"
+                className="flex items-center px-2 md:px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-xs md:text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 flex-shrink-0"
               >
-                <ChevronDown className="w-4 h-4 mr-1" /> main
+                <ChevronDown className="w-3 h-3 md:w-4 md:h-4 mr-1" /> main
               </button>
-              <nav className="flex items-center text-sm font-medium">
+              <nav className="flex items-center text-xs md:text-sm font-medium truncate">
                 <button 
                   onClick={() => setCurrentView('readme')}
                   className="text-[#0969da] hover:underline ml-2"
@@ -61,11 +61,11 @@ export default function App() {
                 <span className="mx-1">/</span>
               </nav>
             </div>
-            <div className="flex items-center space-x-2">
-              <button className="px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Go to file</button>
-              <button className="px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Add file</button>
-              <button className="flex items-center px-3 py-1 bg-[#2da44e] hover:bg-[#2c974b] text-white text-sm font-semibold rounded">
-                <Download className="w-4 h-4 mr-1" /> Code
+            <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-1 sm:pb-0">
+              <button className="px-2 md:px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 whitespace-nowrap">Go to file</button>
+              <button className="px-2 md:px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 whitespace-nowrap">Add file</button>
+              <button className="flex items-center px-2 md:px-3 py-1 bg-[#2da44e] hover:bg-[#2c974b] text-white text-[10px] md:text-sm font-semibold rounded whitespace-nowrap">
+                <Download className="w-3 h-3 md:w-4 md:h-4 mr-1" /> Code
               </button>
             </div>
           </div>
