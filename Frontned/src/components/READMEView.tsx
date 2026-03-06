@@ -13,7 +13,7 @@ export default function READMEView() {
       <div className="p-8 prose dark:prose-invert max-w-none">
         <h1 className="border-b border-[#d0d7de] dark:border-[#30363d] pb-2">Hi there! I'm Banshraj Thapa 👋</h1>
         <p className="text-lg text-[#6e7781] dark:text-[#8b949e] leading-relaxed">
-          I am a passionate Full Stack Developer with 4+ years of experience in building high-quality web applications. I love solving complex problems and turning ideas into reality through code.
+          I am a passionate Full Stack Developer with 1 year of experience in building high-quality web applications. I love solving complex problems and turning ideas into reality through code.
         </p>
 
         <h2 className="border-b border-[#d0d7de] dark:border-[#30363d] pb-2 mt-8">🛠 Technologies & Tools</h2>
@@ -34,12 +34,12 @@ export default function READMEView() {
         <div className="space-y-6 mt-6">
           <div className="border border-[#d0d7de] dark:border-[#30363d] p-4 rounded-lg bg-slate-50 dark:bg-slate-900/50">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="m-0 text-[#0969da]">TaskMaster Pro</h3>
+              <h3 className="m-0 text-[#0969da]">AI based Code Reviewer</h3>
               <span className="px-2 py-0.5 text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full">Live</span>
             </div>
-            <p className="text-sm m-0">A collaborative task management system for agile teams with real-time updates and Gantt charts.</p>
+            <p className="text-sm m-0">AI-powered code review tool that helps developers identify potential bugs, security vulnerabilities, and code quality issues in their code.</p>
             <div className="mt-3 flex items-center space-x-3 text-xs text-[#6e7781] dark:text-[#8b949e]">
-              <span className="flex items-center"><span className="w-3 h-3 rounded-full bg-yellow-400 mr-1.5"></span> JavaScript</span>
+              <span className="flex items-center"><span className="w-3 h-3 rounded-full bg-yellow-400 mr-1.5"></span>JavaScript</span>
               <span className="flex items-center"><Star className="w-3 h-3 mr-1" /> 84</span>
               <span className="flex items-center"><GitFork className="w-3 h-3 mr-1" /> 12</span>
             </div>
@@ -47,12 +47,12 @@ export default function READMEView() {
 
           <div className="border border-[#d0d7de] dark:border-[#30363d] p-4 rounded-lg bg-slate-50 dark:bg-slate-900/50">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="m-0 text-[#0969da]">CryptoPulse Dashboard</h3>
+              <h3 className="m-0 text-[#0969da]">Simple Voice Assistant Terminal Based</h3>
               <span className="px-2 py-0.5 text-xs border border-[#d0d7de] dark:border-[#30363d] rounded-full">Beta</span>
             </div>
-            <p className="text-sm m-0">Real-time cryptocurrency tracking platform with sentiment analysis from social media feeds.</p>
+            <p className="text-sm m-0">A simple voice that can perform tasks though voice command.</p>
             <div className="mt-3 flex items-center space-x-3 text-xs text-[#6e7781] dark:text-[#8b949e]">
-              <span className="flex items-center"><span className="w-3 h-3 rounded-full bg-blue-600 mr-1.5"></span> TypeScript</span>
+              <span className="flex items-center"><span className="w-3 h-3 rounded-full bg-blue-600 mr-1.5"></span> Python</span>
               <span className="flex items-center"><Star className="w-3 h-3 mr-1" /> 128</span>
               <span className="flex items-center"><GitFork className="w-3 h-3 mr-1" /> 45</span>
             </div>

@@ -5,45 +5,45 @@ export default function ExperienceLogView() {
   const logs = [
     {
       commit: 'a1b2c3d4',
-      date: '2023-08-15 09:42:12',
-      title: 'Senior Full Stack Engineer @ TechCorp Global',
+      date: '2026-02-11 09:42:12',
+      title: 'Full Stack Developer Trainee @Techcoder software services pvt ltd ',
       points: [
-        'Led the migration of legacy monolith to microservices architecture (Node.js & Go).',
-        'Optimized CI/CD pipelines, reducing deployment time from 45 mins to 8 mins.',
-        'Mentored a team of 6 junior and mid-level developers.',
+        'Learned and implemented MERN stack technologies including MongoDB, Express.js, React.js, and Node.js.',
+        'Collaborated with senior developers to implement new features and improve existing ones.',
+        'Gained hands-on experience in version control systems and agile development methodologies.',
       ],
       color: 'text-blue-400',
     },
     {
       commit: 'f5g6h7i8',
-      date: '2021-06-01 14:20:05',
-      title: 'Frontend Team Lead @ WebStudio Creative',
+      date: '2025-06-15 14:20:05',
+      title: 'Full stack Developer Intern @Techcoder software services pvt ltd',
       points: [
-        'Developed highly interactive dashboard using React, D3.js, and TypeScript.',
-        'Implemented a custom design system and component library (Tailwind CSS).',
-        'Improved lighthouse performance scores by 40% across client portfolio.',
+        'Learned and implemented MERN stack technologies including MongoDB, Express.js, React.js, and Node.js.',
+        'Collaborated with senior developers to implement new features and improve existing ones.',
+        'Gained hands-on experience in version control systems and agile development methodologies.',
       ],
       color: 'text-slate-400',
     },
     {
       commit: 'k9l0m1n2',
-      date: '2019-03-12 11:05:48',
-      title: 'Junior Developer @ StartUp Inc.',
+      date: '2025-05-12 11:05:48',
+      title: 'Frontend Developer Intern @Prodigy Infotech.',
       points: [
-        'Built MVP features for a fintech mobile app using React Native.',
-        'Maintained and updated RESTful APIs built with Python/Django.',
+        'learned basic frontend development including HTML, CSS, and JavaScript.',
+        'Learned Version Control System.',
       ],
       color: 'text-slate-400',
     },
-    {
-      commit: 'z9y8x7w6',
-      date: '2018-05-20 08:00:00',
-      title: 'Engineering Intern @ BigDataCo',
-      points: [
-        'Initial commit: Started career path into systems engineering and cloud computing.',
-      ],
-      color: 'text-green-400',
-    },
+    // {
+    //   commit: 'z9y8x7w6',
+    //   date: '2018-05-20 08:00:00',
+    //   title: 'Engineering Intern @ BigDataCo',
+    //   points: [
+    //     'Initial commit: Started career path into systems engineering and cloud computing.',
+    //   ],
+    //   color: 'text-green-400',
+    // },
   ];
 
   return (
