@@ -1,5 +1,5 @@
-import { Mail, Link as LinkIcon, Share2, Code } from 'lucide-react';
-import ContactForm from './ContactForm';
+import React from 'react';
+import { Mail, Link as LinkIcon, Share2, Code, Info, Send } from 'lucide-react';
 
 export default function ContactView() {
   return (
@@ -47,7 +47,7 @@ export default function ContactView() {
               <p className="text-slate-900 dark:text-slate-100 font-medium truncate">@dev_portfolio</p>
             </div>
           </a>
-          <a className="flex items-center gap-4 p-4 rounded-xl border border-[#d0d7de] dark:border-[#30363d] hover:border-[#0969da]/50 hover:bg-[#0969da]/5 transition-all group" href="#">
+          <a className="flex items-center gap-4 p-4 rounded-xl border border-[#d0d7de] dark:border-[#30363d] hover:border-[#0969da]/50 hover:bg-[#0969da]/5 transition-all group" href="https://github.com/banxhraj">
             <div className="size-10 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-lg group-hover:bg-[#0969da] group-hover:text-white transition-colors">
               <Code className="w-5 h-5" />
             </div>
@@ -59,7 +59,34 @@ export default function ContactView() {
         </div>
 
         <h2 className="text-2xl font-bold border-b border-[#d0d7de] dark:border-[#30363d] pb-2 mb-6">Send a Message</h2>
-        <ContactForm />
+        <div className="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-6 border border-[#d0d7de] dark:border-[#30363d]">
+          <form className="space-y-4">
+            <div>
+              <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Subject</label>
+              <input className="w-full bg-white dark:bg-[#0d1117] border border-[#d0d7de] dark:border-slate-700 rounded-lg px-4 py-2 focus:border-[#0969da] focus:ring-1 focus:ring-[#0969da] outline-none transition-all text-slate-900 dark:text-slate-100" placeholder="Project Inquiry / Collaboration" type="text"/>
+            </div>
+            <div>
+              <label className="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Message</label>
+              <div className="rounded-lg border border-[#d0d7de] dark:border-slate-700 overflow-hidden bg-white dark:bg-[#0d1117]">
+                <div className="flex items-center gap-4 px-4 py-2 bg-slate-50 dark:bg-slate-800 border-b border-[#d0d7de] dark:border-slate-700">
+                  <button className="text-[#6e7781] hover:text-[#0969da]" type="button"><b>B</b></button>
+                  <button className="text-[#6e7781] hover:text-[#0969da]" type="button"><i>I</i></button>
+                  <button className="text-[#6e7781] hover:text-[#0969da]" type="button"><LinkIcon className="w-4 h-4" /></button>
+                  <button className="text-[#6e7781] hover:text-[#0969da]" type="button"><Info className="w-4 h-4" /></button>
+                </div>
+                <textarea className="w-full border-none bg-transparent px-4 py-3 focus:ring-0 text-slate-900 dark:text-slate-100 resize-none" placeholder="Write your message here..." rows={6}></textarea>
+              </div>
+            </div>
+            <div className="flex items-center justify-between pt-2">
+              <p className="text-xs text-[#6e7781] flex items-center gap-1">
+                <Info className="w-3 h-3" /> Markdown is supported
+              </p>
+              <button className="bg-[#0969da] hover:bg-[#0969da]/90 text-white font-bold py-2 px-6 rounded-lg transition-colors flex items-center gap-2" type="button">
+                <Send className="w-4 h-4" /> Send message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
