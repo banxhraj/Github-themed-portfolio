@@ -64,9 +64,9 @@ export default function App() {
             <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-1 sm:pb-0">
               <button className="px-2 md:px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 whitespace-nowrap">Go to file</button>
               <button className="px-2 md:px-3 py-1 bg-[#f6f8fa] dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] rounded text-[10px] md:text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 whitespace-nowrap">Add file</button>
-              <button className="flex items-center px-2 md:px-3 py-1 bg-[#2da44e] hover:bg-[#2c974b] text-white text-[10px] md:text-sm font-semibold rounded whitespace-nowrap">
+              <a href="/resume.pdf" download="Banshraj_Thapa_Resume.pdf" className="flex items-center px-2 md:px-3 py-1 bg-[#2da44e] hover:bg-[#2c974b] text-white text-[10px] md:text-sm font-semibold rounded whitespace-nowrap cursor-pointer">
                 <Download className="w-3 h-3 md:w-4 md:h-4 mr-1" /> Code
-              </button>
+              </a>
             </div>
           </div>
 
