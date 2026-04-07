@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-6 flex overflow-x-auto scrollbar-hide space-x-6">
-        <a className="flex items-center pb-3 border-b-2 border-[#fd8c73] text-sm font-semibold whitespace-nowrap" href="#">
+        <a className="flex items-center pb-3 border-b-2 border-[#fd8c73] text-sm font-semibold whitespace-nowrap" href="/resume.pdf" download="Banshraj_Thapa_Resume.pdf">
           <Code className="w-4 h-4 mr-2" /> Code
         </a>
         <a className="flex items-center pb-3 border-b-2 border-transparent text-[#6e7781] dark:text-[#8b949e] hover:border-slate-300 text-sm whitespace-nowrap" href="#">
